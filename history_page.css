@@ -1,0 +1,105 @@
+#history_container #timeline{
+    position: absolute;
+    width: 25rem;
+}
+#timeline span{
+    display: block;
+    height: 1325px;
+    width: 5px;
+    transform: translateY(150px);
+    margin: 0 auto;
+    background: #fff;
+}
+.history_content .history_text{
+    display: flex;
+    align-items: center;
+    background-image: url(./resources/history/historyimg1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 325px;
+    font-size: 3rem;
+}
+.history_content .history_text:nth-child(2){
+    background-image: url(./resources//history/historyimg2.webp);
+}
+.history_content .history_text:nth-child(3){
+    background-image: url(./resources//history/historyimg3.PNG);
+}
+.history_content .history_text:nth-child(4){
+    background-image: url(./resources//history/historyimg4.webp);
+}
+.history_content .history_text:nth-child(5){
+    background-image: url(./resources//history/historyimg5.jpg);
+}
+.history_text span:first-child{
+    display: none;
+    position: absolute;
+    width: 4px;
+    height: 150px;
+    background-image: linear-gradient(white, rgba(0, 0, 0, 0));
+}
+.history_text span:nth-child(2){
+    display: grid;
+    place-content: center;
+    position: absolute;
+    background: #260f01;
+    color: #FFFFFF;
+    border: 5px solid #FFFFFF;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    transform: translateX(8rem);
+    transition: ease-in-out 0.3s;
+}
+.history_text span:nth-child(2):hover{
+    scale: 1.1;
+    transform: translateX(7.3rem)
+}
+.history_text .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+}
+.history_text h1, .history_text p{
+    margin-left: 25rem;
+    color: #FFFFFF;
+}
+.history_text h1{
+    font-size: 5rem;
+    margin-bottom: 3rem;
+}
+.history_text p{
+    margin-right: 5rem
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 480px){
+    #timeline span{
+        display: none;
+    }
+    .history_content .history_text{
+        flex-direction: column;
+        height: 725px;
+    }
+    .history_text span:first-child{
+        display: block;
+    }
+    .history_text span:nth-child(2){
+        margin-top: 30px;
+        align-items: center;
+        transform: translateY(0);
+        position: absolute;
+    }
+    .history_text span:nth-child(2):hover{
+        scale: 1;
+        transform: translateX(0)
+    }
+    .history_text h1, .history_text p{
+        margin: 35px;
+    }
+    .history_text .txt{
+        padding-top: 100px;
+    }
+}
