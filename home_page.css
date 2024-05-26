@@ -1,0 +1,107 @@
+#home_page_header h2 {
+  margin-top: 15rem;
+  font-size: 9rem;
+}
+section{
+  background: #260f01;
+}
+
+.mid_container {
+  display: flex;
+}
+
+.mid_container:nth-of-type(2){
+  flex-direction: row-reverse;
+  margin: 1rem 0;
+}
+
+.home_text {
+  background: #FFFFFF;
+  width: 60%;
+  padding: 7.5rem 15.5rem 7.5rem 7.5rem;
+  line-height: 3;
+  font-family: "Montserrat Regular";
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.cut_img {
+  background-image: url(./resources/img/midbg.png);
+  background-size: cover;
+  text-align: right;
+  width: 40%;
+  padding: 3rem;
+  height: auto;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  font-family: "Montserrat Bold";
+  font-size: 7rem;
+  font-weight: 650;
+  line-height: 0.9;
+}
+
+.mid_container:nth-of-type(2) .cut_img{
+  background-image: url(./resources/img/midbg2.png);
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.mid_container:nth-of-type(3) .cut_img{
+  background-image: url(./resources/img/midbg3.png);
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 480px){  
+  #home_page_header h2{
+    margin-top: 8rem;
+    font-size: 6rem;
+  }
+  .mid_container{
+    flex-direction: column-reverse;
+    margin: 0;
+    background-image: url(./resources/img/midbg.png);
+    background-size: cover;
+  }
+  .mid_container:nth-of-type(2){
+    flex-direction: column-reverse;
+    background-image: url(./resources/img/midbg2.png)
+  }
+  .mid_container:nth-of-type(3){
+    background-image: url(./resources/img/midbg3.png)
+  }
+  .home_text, .cut_img, .mid_container:nth-of-type(2) .cut_img, .mid_container:nth-of-type(3) .cut_img{
+    width: 100%;
+    background-image: none;
+    background: rgba(0, 0, 0, 0.65);
+  }
+  .home_text{
+    color: #FFFFFF;
+    text-align: justify;
+    padding: 5.5rem;
+    line-height: 2;
+  }
+  .cut_img{
+    justify-content: flex-start;
+  }
+  .cut_text{
+    text-align: left;
+  }
+}
+
+/* FONT */
+
+@font-face {
+  font-family: "TW Cent";
+  src: url(./resources/fonts/TW_Cent.TTF);
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(./resources/fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(./resources/fonts/Montserrat-Light.ttf);
+}

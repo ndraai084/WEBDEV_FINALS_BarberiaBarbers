@@ -1,0 +1,279 @@
+/* SERVICES  */
+.services_container{
+  display: flex;
+  color: #FFFFFF;
+  border-top: 4px #260f01 solid;
+}
+
+.services_offered{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5rem;
+  background: #52281d;
+  height: 350px;
+  width: 50%;
+  font-size: 1.5rem;
+  font-family: "Montserrat Regular";
+  line-height: 2;
+}
+
+.services_offered .services_text{
+  display: flex;
+  align-items: center;
+}
+
+.services_offered h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.services_offered .circle{
+  display: grid;
+  place-content: center;
+  width: 65px;
+  height: 65px;
+  background: #260f01;
+  border-radius: 100%;
+  border: 1px #FFFFFF solid;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+  margin: 20px;
+}
+
+.services_offered .circle i{
+  scale: 1.5;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+.services_offered .services_description{
+  width: 85%;
+  font-size: 15px;
+}
+
+.services_offered .services_btn{
+  margin: 30px 0;
+}
+
+.services_offered .services_btn a{
+  color: #FFFFFF;
+  background: #260f01;
+  padding: 15px 30px;
+  border-radius: 25px; 
+  transition: 0.5s ease-in-out; 
+}
+
+.services_offered .services_btn a:hover{
+  background: #8d5546;
+}
+
+.services_offered span{
+  display: block;
+  width: 90%;
+  height: 2px;
+  background: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.services_container .services_img{
+  width: 50%;
+  background-image: url(./resources/etc/services-img1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.services_container:nth-of-type(even){
+  flex-direction: row-reverse;
+}
+
+.services_container:nth-of-type(2) .services_img{
+  background-image: url(./resources/etc/services-img2.jpg);
+}
+
+.services_container:nth-of-type(3) .services_img{
+  background-image: url(./resources/etc/services-img3.jpg);
+}
+
+/* SLIDER */
+#slider{
+  background-image: url(resources/img/barbershopbg.png);
+  background-size: cover;
+  height: 1100px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+#slider h1{
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+
+#slider #haircuts{
+  display: flex;
+  align-items: center;
+  height: 875px;
+  width: 585px;
+  gap: 2rem; 
+  overflow-x: auto;
+  overflow: hidden;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+#slider #haircuts::-webkit-scrollbar{
+  display: none;
+}
+
+#slider .content{
+  flex: 0 0 auto;
+  text-align: center;
+  border-radius: 25px;
+  scroll-snap-align: center;
+  transition: ease-in-out 0.3s;
+}
+
+#slider .content.active{
+  scale: 1.3;
+}
+
+#slider .content img{
+  height: 550px;
+  width: 450px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+#slider .content h1{
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+#buttons{
+  display: flex;
+  gap: 5rem;
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+#buttons a{
+  color: #8d5546;
+  font-size: 7rem;
+  -webkit-text-stroke: 3px #260f01;
+}
+
+#slider #haircuts .content{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* BOOKING */
+#booking_container{
+  text-align: center;
+  color: #260f01;
+  font-size: 25px;
+  margin: 20px 0;
+  margin-top: 60px;
+}
+
+#booking_container h1{
+  font-size: 40px;
+  margin: 25px 0;
+}
+
+#booking_container #booking_btn{
+  margin: 35px 0;
+  margin-bottom: 80px;
+}
+
+#booking_container #booking_btn a{
+  background: #260f01;
+  color: #FFFFFF;
+  padding: 15px 30px;
+  border-radius: 25px; 
+  transition: 0.5s ease-in-out; 
+}
+
+#booking_container #booking_btn a:hover{
+  background: #8d5546;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 480px){
+  #home_page_header h2{
+    margin-top: 5rem;
+  }
+  .services_offered .circle{
+    scale: 0.9;
+  }
+  .services_offered .services_btn a:hover{
+    background: #260f01;
+  }
+  .services_container{
+    background-size: cover;
+    background-image: url(./resources/etc/services-img1.jpg);
+  }
+  .services_container:nth-of-type(2){
+    background-image: url(./resources/etc/services-img2.jpg);
+  }
+  .services_container:nth-of-type(3){
+    background-image: url(./resources/etc/services-img3.jpg);
+  }
+  .services_container .services_offered{
+    width: 100%;
+    height: 450px;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+  }
+  .services_offered h1{
+    font-size: 25px;
+  }
+  .services_container .services_img{
+    display: none;
+  }
+  .booking_container{
+    width: 85%;
+    margin: 20px auto;
+  }
+  #booking_container #booking_btn a:hover{
+    background: #260f01;
+  }
+  #slider{
+    height: 1000px;
+  }
+  #slider .content{
+    scale: 0.65;
+  }
+  #slider .content.active{
+    scale: 0.95;
+  }
+}
+
+/* FONT */
+
+@font-face {
+  font-family: "TW Cent";
+  src: url(./resources/fonts/TW_Cent.TTF);
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(./resources/fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(./resources/fonts/Montserrat-Light.ttf);
+}

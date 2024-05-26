@@ -1,0 +1,346 @@
+/* -------------RESETS------------- */
+/*Resets are used for overwriting default html tag properties*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  font,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    list-style: none;
+  }
+  html {
+    font-size: 62.5%;
+    height: 100%;
+  }
+  body {
+    color: #2b2b2b;
+    font-family: "TW Cent";
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    line-height: 1.4;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  article,
+  aside,
+  footer,
+  header,
+  nav,
+  section,
+  time {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+
+/* CSS */
+
+#home_page_header {
+  background-image: url(./resources/etc/servicesbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.shadow_text {
+  text-shadow: 0 0 10px black, 0 0 10px black;
+  color: white;
+}
+
+#home_page_header h2 {
+  font-weight: 600;
+  margin-top: 15rem;
+  font-size: 10rem;
+  -webkit-text-stroke: 1px #000000;
+}
+
+#home_page_header #logo #home_logo {
+    height: 50px;
+}
+
+#home_page_header #header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    background-color: #00000088;
+    height: 100px;
+    position: sticky;
+    top: 0px;
+}
+
+#home_page_header #nav_buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    gap: 1rem;
+}
+
+#home_page_header .nav_button a {
+  width: 8vw;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: black 3px solid;
+  transition: 0.5s ease-in-out;
+  height: 80px;
+  color: white;
+}
+
+#home_page_header .nav_button a:hover{
+  background-color: rgb(24, 24, 24, 0.8);
+  border-bottom: #8a8a8a 3px solid;
+  cursor: pointer;
+}
+
+.button_text {
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+    box-shadow: #2b2b2b;
+}
+
+/* SERVICES  */
+#services_container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+#services_offered{
+  text-align: center;
+  width: 300px;
+  margin: 30px auto;
+  height: 350px;
+}
+
+#services_offered .services_description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+#services_offered .services_description h1{
+  font-size: 30px;
+}
+
+#services_offered .services_description p{
+  word-spacing: 5px;
+  margin: 20px 0;
+}
+
+#services_offered:first-of-type .services_description{
+  margin-bottom: 45px;
+}
+
+#services_offered a.price_button{
+  align-self: flex-end;
+  color: #FFFFFF;
+  background: #260f01;
+  padding: 10px 25px;
+  border-radius: 20px; 
+  transition: 0.5s ease-in-out; 
+}
+
+#services_offered a.price_button:hover{
+  background: #52281d;
+}
+
+
+.circle{
+  width: 65px;
+  height: 65px;
+  background: #260f01;
+  border-radius: 100%;
+  border: 1px #FFFFFF solid;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+  margin: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  background-image: url(./resources/etc/footerbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#top_footer, #bottom_footer {
+  display: flex;
+  background-color: #000000dd;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+#bottom_footer {
+  display: flex;
+  flex-direction: column;
+  padding: none;
+  gap: 3rem;
+}
+
+#top_footer ul {
+  line-height: 2;
+}
+
+#top_footer ul li a {
+  color: #FFFFFF;
+  transition: 0.25s ease-in-out;
+  font-size: 1.9rem;
+}
+
+#top_footer ul li a:hover {
+  font-weight: 600;
+  transition: 0.25s ease-in-out;
+}
+
+#top_footer #bottom_logo {
+  width: 200px;
+}
+
+#second_options {
+  text-align: right;
+}
+
+.options {
+  line-height: 2.5;
+}
+
+#socials {
+  width: 300px;
+  display: block;
+}
+
+#footer_separator{
+  background-color: #000000dd;
+}
+
+#footer_separator span{
+  display: block;
+  background-color: #FFFFFF;
+  height: 0.5px;
+  width: 100%;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 480px){
+  #home_page_header{
+    height: 400px;
+  }  
+  #home_page_header #header_container #nav{
+    display: none;
+  }
+  #home_page_header h2{
+    font-size: 6rem;
+  }
+  #top_footer #bottom_logo{
+    width: 100px;
+  }
+  #top_footer ul li a:hover {
+    font-weight: 100;
+  }
+}
+
+/* FONT */
+
+@font-face {
+  font-family: "TW Cent";
+  src: url(./resources/fonts/TW_Cent.TTF);
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(./resources/fonts/Montserrat-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(./resources/fonts/Montserrat-Medium.ttf);
+}
