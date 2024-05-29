@@ -1,0 +1,51 @@
+#about_container{
+    display: flex;
+    flex-direction: column;
+}
+.about_content{
+    background-image: url(./resources/about/aboutbg1.jpg);
+    background-size: cover;
+}
+.about_content:nth-of-type(2){
+    background-image: url(./resources/about/aboutbg2.webp);
+    background-position: center;
+}
+.about_content:nth-of-type(3){
+    background-image: url(./resources/about/aboutbg3.png);
+    background-position: center;
+}
+.about_content:nth-of-type(4){
+    background-image: url(./resources/about/aboutbg4.webp);
+}
+.about_content:nth-of-type(5){
+    background-image: url(./resources/about/aboutbg5.jpg);
+    background-position: center;
+}
+.about_text{
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 4rem;
+    text-align: center;
+    align-items: center;
+    color: #F0F0F0;
+}
+.about_text h1{
+    font-size: 5rem;
+}
+.about_text span{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5rem 0;
+    height: 3px;
+    width: 1200px;
+    background: #F0F0F0;
+}
+.about_text span i{
+    font-size: 2rem;
+}
+.about_text p{
+    font-size: 3rem;
+    margin: 0 15rem;
+}
