@@ -55,7 +55,7 @@ section{
 @media screen and (max-width: 480px){  
   #home_page_header h2{
     margin-top: 8rem;
-    font-size: 6rem;
+    font-size: 5rem;
   }
   .mid_container{
     flex-direction: column-reverse;

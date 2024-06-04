@@ -49,3 +49,83 @@
     font-size: 3rem;
     margin: 0 15rem;
 }
+
+/* CONTACT */
+#contact_container{
+    background-image: url(/resources/img/barbershopbg.png);
+    background-size: cover;
+    color: #F0F0F0;
+}
+#contact_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    align-items: center;
+}
+#contact_container #contact_header{
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 6rem;
+}
+#contact_container #contact_header p{
+    font-size: 2rem;
+}
+#contact_information{    
+    background: rgba(82, 40, 29, 0.85);
+    width: 1550px;
+    margin: 5rem 0;
+    padding: 5rem 2rem;
+    border: 3px solid #260f01;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.45);
+}
+#contact_text{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+#contact_text .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+#contact_text .circ{
+  display: grid;
+  place-content: center;
+  transform: translateY(-12rem);
+  position: absolute;
+  width: 95px;
+  height: 95px;
+  background: #260f01;
+  border-radius: 100%;
+  border: 3px #FFFFFF solid;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
+}
+@media screen and (max-width: 480px){
+    .about_text p{
+        margin: 0;
+    }
+    .about_text span{
+        width: 360px;
+    }
+    #contact_information{
+        width: 315px;
+    }
+    #contact_text{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact_text .circ{
+        position: static;
+        transform: translateY(0);
+    }
+    #contact_text .circ{
+        scale: 0.8;
+    }
+    .info h2{
+        font-size: 24px;
+    }
+}

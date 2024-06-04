@@ -158,7 +158,7 @@
 
 #slider .content h1{
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 #buttons{
@@ -218,6 +218,9 @@
   .services_offered .circle{
     scale: 0.9;
   }
+  .services_offered .services_btn a{
+    font-size: 14px;
+  }
   .services_offered .services_btn a:hover{
     background: #260f01;
   }
@@ -238,7 +241,7 @@
     background-size: cover;
   }
   .services_offered h1{
-    font-size: 25px;
+    font-size: 18px;
   }
   .services_container .services_img{
     display: none;
@@ -251,13 +254,17 @@
     background: #260f01;
   }
   #slider{
-    height: 1000px;
+    height: 800px;
   }
   #slider .content{
-    scale: 0.65;
+    scale: 0.55;
+    transition: ease-in-out 0.3s;
   }
   #slider .content.active{
-    scale: 0.95;
+    scale: 0.75;
+  }
+  #buttons{
+    bottom: 0;
   }
 }
 

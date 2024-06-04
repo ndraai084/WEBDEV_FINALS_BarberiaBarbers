@@ -81,7 +81,7 @@
     }
     .history_content .history_text{
         flex-direction: column;
-        height: 725px;
+        height: 850px;
     }
     .history_text span:first-child{
         display: block;
