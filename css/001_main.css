@@ -86,7 +86,7 @@
   }
   body {
     color: #2b2b2b;
-    font-family: "TW Cent";
+    font-family: "Montserrat Light";
     font-size: 1.6rem;
     overflow-x: hidden;
     line-height: 1.4;
@@ -113,45 +113,61 @@
 
 /* CSS */
 
-#home_page_header {
-  background-image: url(./resources/etc/servicesbg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
+::selection{
   color: white;
+  background-color: #2b2b2b;
+  transition: 0.1s, ease-in-out;
+}
+
+#header {
+  color: white;
+  background-color: #00000011;
+  transition: 0.5s ease-in-out;
   align-items: center;
   text-align: center;
-  justify-content: center;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  top: 0px;
+  display: flex;
+  padding: 0 5rem;
 }
 
-.shadow_text {
-  text-shadow: 0 0 10px black, 0 0 10px black;
-  color: white;
+#header.black{
+  background-color: #000000de;
+  transition: 0.5s ease-in-out;
 }
 
-#home_page_header h2 {
-  font-weight: 600;
-  margin-top: 15rem;
-  font-size: 10rem;
-  -webkit-text-stroke: 1px #000000;
-}
-
-#home_page_header #logo #home_logo {
+#header #logo #home_logo_rectangle {
     height: 50px;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
 }
 
-#home_page_header #header_container {
+#header.black #logo #home_logo_rectangle {
+  height: 40px;
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+
+#header #header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5rem;
-    background-color: #00000088;
     height: 100px;
-    position: sticky;
-    top: 0px;
+    width: 100%;
+    justify-content: space-between;
+    transition: 0.5s ease-in-out;
+
 }
 
-#home_page_header #nav_buttons {
+#header.black #header_container {
+  height: 70px;
+  transition: 0.5s ease-in-out;
+}
+
+#header #nav_buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -159,19 +175,23 @@
     gap: 1rem;
 }
 
-#home_page_header .nav_button a {
+#header .nav_button a {
   width: 8vw;
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: black 3px solid;
+  border-bottom: transparent 3px solid;
   transition: 0.5s ease-in-out;
   height: 80px;
   color: white;
 }
 
-#home_page_header .nav_button a:hover{
+#header.black .nav_button a {
+  height: 60px;
+}
+
+#header .nav_button a:hover{
   background-color: rgb(24, 24, 24, 0.8);
   border-bottom: #8a8a8a 3px solid;
   cursor: pointer;
@@ -184,75 +204,79 @@
     box-shadow: #2b2b2b;
 }
 
-/* SERVICES  */
-#services_container{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 10px;
-}
-
-#services_offered{
-  text-align: center;
-  width: 300px;
-  margin: 30px auto;
-  height: 350px;
-}
-
-#services_offered .services_description{
+/* BANNER */
+#banner{
+  height: 67vh;
+  width: 100%;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
 }
 
-#services_offered .services_description h1{
-  font-size: 30px;
+.shadow_text {
+  text-shadow: 0 0 10px black, 0 0 1px black;
+  font-weight: 600;
+  font-size: 8rem;
+  font-family: "Montserrat Light";
+  letter-spacing: 5px;
+  color: white;
 }
 
-#services_offered .services_description p{
-  word-spacing: 5px;
-  margin: 20px 0;
+#banner .intro_description{
+  font-size: 20px;
+  font-family: "Montserrat Extra Light";
+  letter-spacing: 2px !important;
 }
 
-#services_offered:first-of-type .services_description{
-  margin-bottom: 45px;
+#banner .banner_text {
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  left: 10rem;
 }
 
-#services_offered a.price_button{
-  align-self: flex-end;
-  color: #FFFFFF;
-  background: #260f01;
-  padding: 10px 25px;
-  border-radius: 20px; 
-  transition: 0.5s ease-in-out; 
+#banner img {
+  width: 100%;
 }
 
-#services_offered a.price_button:hover{
-  background: #52281d;
+/* SCROLLER */
+#scroll_to_top{
+  display: block;
+  background-color: #000000ad;
+  height: 67px;
+  width: 67px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+  transition: 0.25s ease-in-out;
+  place-content: center;
 }
 
+#scroll_to_top:hover{
+  cursor: pointer;
+  background-color: #484848da;
+}
 
-.circle{
-  width: 65px;
-  height: 65px;
-  background: #260f01;
-  border-radius: 100%;
-  border: 1px #FFFFFF solid;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.45);
-  margin: 20px;
+#scroll_to_top i {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 /* FOOTER */
 
 footer {
-  background-image: url(./resources/etc/footerbg.jpg);
+  background-image: url(/resources/etc/footerbg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #top_footer, #bottom_footer {
   display: flex;
-  background-color: #000000dd;
+  background-color: #000000ca;
   color: white;
   justify-content: space-evenly;
   align-items: center;
@@ -271,13 +295,14 @@ footer {
 }
 
 #top_footer ul li a {
-  color: #FFFFFF;
-  transition: 0.25s ease-in-out;
+  color: #848484;
   font-size: 1.9rem;
+  font-weight: 400;
+  transition: 0.25s ease-in-out;
 }
 
 #top_footer ul li a:hover {
-  font-weight: 600;
+  color: #FFFFFF;
   transition: 0.25s ease-in-out;
 }
 
@@ -299,7 +324,7 @@ footer {
 }
 
 #footer_separator{
-  background-color: #000000dd;
+  background-color: #000000de;
 }
 
 #footer_separator span{
@@ -333,15 +358,20 @@ footer {
 
 @font-face {
   font-family: "TW Cent";
-  src: url(./resources/fonts/TW_Cent.TTF);
+  src: url(/resources/fonts/TW_Cent.TTF);
 }
 
 @font-face {
-  font-family: "Montserrat Bold";
-  src: url(./resources/fonts/Montserrat-ExtraBold.ttf);
+  font-family: "Montserrat Extra Light";
+  src: url(/resources/fonts/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url(/resources/fonts/Montserrat-Light.ttf);
 }
 
 @font-face {
   font-family: "Montserrat Regular";
-  src: url(./resources/fonts/Montserrat-Medium.ttf);
+  src: url(/resources/fonts/Montserrat-Regular.ttf);
 }

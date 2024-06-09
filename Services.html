@@ -4,127 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barberia Barbers | Services</title>
-    <link rel="stylesheet" href="./Services.css">
-    <link rel="stylesheet" href="./services_page.css">
-    <script src="https://kit.fontawesome.com/b0556ea063.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/001_main.css">
+    <link rel="stylesheet" href="./css/services_page.css">
+    <link rel="stylesheet" href="./css/services_page_slider.css">
+    <script src='https://kit.fontawesome.com/b0556ea063.js' crossorigin='anonymous'></script>
 </head>
 <body>
-    <header id="home_page_header">
-        <div id="header_container">
-            <div id="logo">
-                <img src="./resources/img/barberiaLogoRectangle.png" alt="" id="home_logo">
-            </div>
-            <div id="nav">
-                <ul id="nav_buttons">
-                    <li class="nav_button"><a href="./home_page.html" class="button_text">HOME</a></li>
-                    <li class="nav_button"><a href="./Services.html" class="button_text">SERVICES</a></li>
-                    <li class="nav_button"><a href="./History.html" class="button_text">HISTORY</a></li>
-                    <li class="nav_button"><a href="./About.html" class="button_text">ABOUT</a></li>
-                </ul>
-            </div>
-        </div>
-        <h2 class="shadow_text">SERVICES OFFERED</h2>
-    </header>
-
-    <section>
-        <div class="services_container">
-            <div class="services_offered">
-                <div class="services_text">
-                    <h1>Haircut</h1>
-                    <div class="circle">
-                        <i class="fa-solid fa-scissors"></i>
-                    </div>
-                </div>
-                <span></span>
-                <div class="services_description">
-                    <p>From simple trims to complex fades, our barbers have you covered with the BEST haircut quality in town.</p>
-                </div>
-                <div class="services_btn">
-                    <a href="">PRICE || Starts at PHP 80.00</a>
-                </div>
-            </div>
-            <div class="services_img"></div>
-        </div>
-        <div class="services_container">
-            <div class="services_offered">
-                <div class="services_text">
-                    <h1>Hair Color</h1>
-                    <div class="circle">
-                        <i class="fa-solid fa-brush"></i>
-                    </div>
-                </div>
-                <span></span>
-                <div class="services_description">
-                    <p>Feeling a new shade for your hair is all you need? We have you covered with our top of the line hair coloring products at our branches!</p>
-                </div>
-                <div class="services_btn">
-                    <a href="">PRICE || PHP 150.00 per layer</a>
-                </div>
-            </div>
-            <div class="services_img"></div>
-        </div>
-        <div class="services_container">
-            <div class="services_offered">
-                <div class="services_text">
-                    <h1>Shave & Hair Tattoo</h1>
-                    <div class="circle">
-                        <i class="fa-solid fa-pen-nib"></i>
-                    </div>
-                </div>
-                <span></span>
-                <div class="services_description">
-                    <p>Style and design of your choice is a call we live to answer! Clean up and style your hair how you want at our branches!</p>
-                </div>
-                <div class="services_btn">
-                    <a href="">PRICE || Starts at PHP 100.00</a>
-                </div>
-            </div>
-            <div class="services_img"></div>
+    <section id="banner">
+        <img src="./resources/img/b&w barbershop interior darkened.jpg" alt="" id="banner_bg">
+        <div class="banner_text">
+            <h2 class="shadow_text">S E R V I C E S</h2>
         </div>
     </section>
 
-    <section>
-        <div id="slider">
-            <h1 class="shadow_text">We offer quality haircuts!</h1>
-            <div id="haircuts">
-                <!-- To center the first image in mobile view -->
-                <div class="content"> 
-                    <img src="" alt=""> 
-                </div>
-                <div class="content active">
-                    <img src="resources/slider/slider1.jpg" alt="">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                </div>
-                <div class="content">
-                    <img src="resources/slider/slider2.jpg" alt="">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                </div>
-                <div class="content">
-                    <img src="resources/slider/slider3.jpg" alt="">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                </div>
-                <div class="content">
-                    <img src="resources/slider/slider3.jpg" alt="">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                </div>
-                <div class="content">
-                    <img src="resources/slider/slider3.jpg" alt="">
-                    <h1>Lorem ipsum dolor sit amet.</h1>
-                </div>
-                <!-- To center the last image in mobile view -->
-                <div class="content">
-                    <img src="" alt="">
+    <section id="services">
+        <div id="services_container">
+            <div class="services_card">
+                <div class="services_wrapper">
+                    <div class="services_offered">
+                        <div class="services_text">
+                            <h1>Haircut</h1>
+                            <div class="circle">
+                                <i class="fa-solid fa-scissors"></i>
+                            </div>
+                        </div>
+                        <span></span>
+                        <div class="services_description">
+                            <p>From simple trims to complex fades, our barbers have you covered with the BEST haircut quality in town.</p>
+                        </div>
+                        <div class="services_btn">
+                            <a href="">PRICE || Starts at PHP 80.00</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div id="buttons">
-                <a id="prevButton" onclick="prevImg()"><i class="fa-solid fa-caret-left"></i></a>
-                <a id="nextButton" onclick="nextImg()"><i class="fa-solid fa-caret-right"></i></a>
+    
+            <div class="services_card">
+                <div class="services_wrapper">
+                    <div class="services_offered">
+                        <div class="services_text">
+                            <h1>Hair Color</h1>
+                            <div class="circle">
+                                <i class="fa-solid fa-brush"></i>
+                            </div>
+                        </div>
+                        <span></span>
+                        <div class="services_description">
+                            <p>Feeling a new shade for your hair is all you need? We have you covered with our top of the line hair coloring products at our branches!</p>
+                        </div>
+                        <div class="services_btn">
+                            <a href="">PRICE || PHP 150.00 per layer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services_card">
+                <div class="services_wrapper">
+                    <div class="services_offered">
+                        <div class="services_text">
+                            <h1>Shave & Hair Tattoo</h1>
+                            <div class="circle">
+                                <i class="fa-solid fa-pen-nib"></i>
+                            </div>
+                        </div>
+                        <span></span>
+                        <div class="services_description">
+                            <p>Style and design of your choice is a call we live to answer! Clean up and style your hair how you want at our branches!</p>
+                        </div>
+                        <div class="services_btn">
+                            <a href="">PRICE || Starts at PHP 100.00</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="carousel.js"></script>
 
-    <section>
+    <section id="services_style_options">
+        <div id="services_style_options_container">
+            <div id="styles_intro">
+                <h1>Learn your styles</h1>
+                <span id="services_style_black_line"></span>
+            </div>
+            <div id="slider_container">
+                <div class="slider_card" id="slider_card_0">
+                    <span class="black_film"></span>
+                    <img src="./resources/img/haircuts/skin fade.jpg" alt="" class="slider_img">
+                    <h1 class="slider_name">Skin Fade</h1>
+                    <h3 class="slider_details">
+                        Skin Fade
+                        <div class="information">
+                            A skin fade haircut seamlessly transitions from a shorter length at the top to a bare, smooth finish at the bottom, epitomizing contemporary style and precision grooming.                        
+                        </div>
+                    </h3>
+                </div>
+        
+                <div class="slider_card" id="slider_card_1">
+                    <span class="black_film"></span>
+                    <img src="./resources/img/haircuts/flat top.jpg" alt="" class="slider_img">
+                    <h1 class="slider_name">Flat Top</h1>
+                    <h3 class="slider_details">
+                        Flat Top
+                        <div class="information">
+                            A bold and timeless style defined by its straight, level crown and sharp edges, making a statement with every angle.
+                        </div>
+                    </h3>
+                </div>
+        
+                <div class="slider_card" id="slider_card_2">
+                    <span class="black_film"></span>
+                    <img src="./resources/img/haircuts/undercut.jpg" alt="" class="slider_img">
+                    <h1 class="slider_name">Undercut</h1>
+                    <h3 class="slider_details">
+                        Undercut
+                        <div class="information">
+                            The undercut: a versatile and edgy haircut characterized by short sides and longer hair on top, offering a bold contrast and endless styling options.
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="slider_card" id="slider_card_3">
+                    <span class="black_film"></span>
+                    <img src="./resources/img/haircuts/buzz cut.jpg" alt="" class="slider_img">
+                    <h1 class="slider_name">Buzz Cut</h1>
+                    <h3 class="slider_details">
+                        Buzz Cut
+                        <div class="information">
+                            The buzz cut: a classic and low-maintenance style featuring uniformly short hair, effortlessly combining simplicity with timeless appeal.
+                        </div>
+                    </h3>
+                </div>
+
+                <div class="slider_card" id="slider_card_4">
+                    <span class="black_film"></span>
+                    <img src="./resources/img/haircuts/pompadour.webp" alt="" class="slider_img">
+                    <h1 class="slider_name">Pompadour</h1>
+                    <h3 class="slider_details">
+                        Pompadour
+                        <div class="information">
+                            The pompadour: a sleek and suave hairstyle with a voluminous top, exuding confidence and timeless charm.
+                        </div>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services_booking">
         <div id="booking_container">
             <h1>Book an Appointment.</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vel culpa voluptate tempore magni soluta. Alias placeat voluptatem animi repellendus?</p>
@@ -134,29 +161,7 @@
         </div>
     </section>
 
-    <footer id="footer">
-        <div id="top_footer">
-            <ul id="first_options" class="options">
-                <li><a href="./home_page.html">HOME</a></li>
-                <li><a href="./History.html">HISTORY</a></li>
-                <li><a href="">CONTACT US</a></li>
-                <li><a href="./About.html">ABOUT US</a></li>
-            </ul>
-            <img src="./resources/etc/barberiaRoundLogoNobg.png" alt="" id="bottom_logo">
-            <ul id="second_options" class="options">
-                <li><a href="">LOCATIONS</a></li>
-                <li><a href="./Services.html">SERVICES</a></li>
-                <li><a href="">BOOKING</a></li>
-                <li><a href="">GET IN STYLE</a></li>
-            </ul>
-        </div>
-        <div id="footer_separator">
-            <span></span>
-        </div>
-        <div id="bottom_footer">
-            <img src="./resources/etc/socials.png" alt="" id="socials">
-            <h3>ALL RIGHTS RESERVED 2020-2024</h3>
-        </div>
-    </footer>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/services_page_slider.js"></script>
 </body>
 </html>

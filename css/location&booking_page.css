@@ -1,0 +1,248 @@
+/* LOCATIONS */
+#locations #location_maps{
+  display: flex;
+}
+
+#locations{
+  padding: 2rem;
+}
+
+#locations #location_select{
+  place-content: center;
+}
+
+#locations #location_select #location_options_list{
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  gap: 2rem;
+}
+
+#locations #location_select #location_options_list li{
+  padding: 2rem 5rem;
+  border-radius: 5rem;
+  box-shadow: #00000084 0 0 4px;
+}
+
+#locations #location_select #location_options_list li:hover, li.active{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+@keyframes fading {
+  from {display: none;}
+  to {display: flex;}
+}
+
+/* MAPS */
+#locations{
+  width: 100%;
+}
+
+#locations .branch_container{
+  display: none;
+  opacity: 0;
+  flex-direction: row;
+  width: 100%;
+  padding: 2rem;
+  transition: opacity 200ms, display 200ms;
+}
+
+#locations .branch_container.active{
+  opacity: 1;
+  display: flex;
+  transition: 0.5s ease-in-out;
+}
+
+#locations .location_information{
+  padding: 2rem 2rem 2rem 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 25%;
+}
+
+#locations .location_information .location_details{
+  gap: 2rem;
+  padding: 0 0 0 1rem;
+}
+
+#locations .location_information h2{
+  font-weight: 670;
+  font-size: 2rem;
+}
+
+#locations .location_information .horizontal_black_line{
+  display: block;
+  background-color: #00000028;
+  height: 1px;
+  width: 100%;
+}
+
+#locations .location_information .location_phone{
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  place-content: center;
+  background-color: black;
+  border-radius: 3rem;
+  padding: 1rem;
+  transition: 0.3s ease-in-out;
+}
+
+#locations .location_information .location_phone i  {
+  display: block;
+  place-content: center;
+}
+
+#locations .location_information .location_phone:hover{
+  cursor: pointer;
+  background-color: #484848;
+  transition: 0.3s ease-in-out;
+}
+
+.google_maps_container{
+  width: 100%;
+  height: 50rem;
+}
+
+.google_maps_wrapper{
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+#locations #location_maps .google_map_embed{
+  height: 100%;
+  width: 100%;
+}
+
+/* BOOKING */
+#booking{
+  display: flex;
+  width: 100%;
+}
+
+#booking_container {
+  background: #FFFFFF;
+  width: 60%;
+  padding: 7.5rem 15.5rem 7.5rem 7.5rem;
+  line-height: 2.5;
+  letter-spacing: 0.1rem;
+  font-family: "Montserrat Extra Light";
+  font-size: 1.7rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.cut_img {
+  background-image: url(/resources/img/midbg.png);
+  background-size: cover;
+  text-align: right;
+  width: 40%;
+  padding: 3rem;
+  height: auto;
+  justify-content: flex-end;
+  align-items: center;
+  display: flex;
+  font-family: "Montserrat Regular";
+  letter-spacing: 2px;
+  font-size: 7rem;
+  font-weight: 650;
+  line-height: 0.9;
+}
+
+#booking #booking_container{
+  display: grid;
+  grid-template-columns: 5fr 1fr 1fr 8fr;
+  align-items: center;
+}
+
+#booking #booking_container h2{
+  font-size: 4rem;
+}
+
+#booking #booking_container #home_booking_white_line{
+  width: 2px;
+  height: 100%;
+  display: block;
+  background-color: black;
+}
+
+#booking #booking_container #booking_form{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#booking #black_film{
+  display: block;
+  width: 100%;
+  height: inherit;
+  background-color: bisque;
+  position: relative;
+}
+
+/* MOBILE VIEW */
+@media screen and (max-width: 480px){  
+  #home_page_header h2{
+    margin-top: 8rem;
+    font-size: 5rem;
+  }
+  .mid_container{
+    flex-direction: column-reverse;
+    margin: 0;
+    background-image: url(/resources/img/midbg.png);
+    background-size: cover;
+  }
+  .mid_container:nth-of-type(2){
+    flex-direction: column-reverse;
+    background-image: url(/resources/img/midbg2.png)
+  }
+  .mid_container:nth-of-type(3){
+    background-image: url(/resources/img/midbg3.png)
+  }
+  .home_text, .cut_img, .mid_container:nth-of-type(2) .cut_img, .mid_container:nth-of-type(3) .cut_img{
+    width: 100%;
+    background-image: none;
+    background: rgba(0, 0, 0, 0.65);
+  }
+  .home_text{
+    color: #FFFFFF;
+    text-align: justify;
+    padding: 5.5rem;
+    line-height: 2;
+  }
+  .cut_img{
+    justify-content: flex-start;
+  }
+  .cut_text{
+    text-align: left;
+  }
+}
+
+/* FONT */
+
+@font-face {
+  font-family: "TW Cent";
+  src: url(/resources/fonts/TW_Cent.TTF);
+}
+
+@font-face {
+  font-family: "Montserrat Extra Light";
+  src: url(/resources/fonts/Montserrat-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url(/resources/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(/resources/fonts/Montserrat-Regular.ttf);
+}

@@ -4,78 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barberia Barbers | Home</title>
-    <link rel="stylesheet" href="./Services.css">
-    <link rel="stylesheet" href="./home_page.css">
+    <link rel="stylesheet" href="./css/001_main.css">
+    <link rel="stylesheet" href="./css/home_page.css">
+    <link rel="stylesheet" href="./css/002_booking.css">
+    <script src='https://kit.fontawesome.com/b0556ea063.js' crossorigin='anonymous'></script>
 </head>
 <body>
-    <header id="home_page_header">
-        <div id="header_container">
-            <div id="logo">
-                <img src="./resources/img/barberiaLogoRectangle.png" alt="" id="home_logo">
-            </div>
-            <div id="nav">
-                <ul id="nav_buttons">
-                    <li class="nav_button"><div class="button_text"><a href="./home_page.html">HOME</a></div></li>
-                    <li class="nav_button"><div class="button_text"><a href="./Services.html">SERVICES</a></div></li>
-                    <li class="nav_button"><div class="button_text"><a href="./History.html">HISTORY</a></div></li>
-                    <li class="nav_button"><div class="button_text"><a href="./About.html">ABOUT</a></div></li>
-                </ul>
-            </div>
+    <section id="banner">
+        <img src="./resources/img/b&w barbershop interior darkened.jpg" alt="" id="banner_bg">
+        <div class="banner_text">
+            <h2 class="shadow_text">W E L C O M E</h2>
         </div>
-
-        <h2 class="shadow_text">W E L C O M E</h2>
-    </header>
+    </section>
     
-    <section>
+    <section id="introductions">
         <div class="mid_container">
             <div class="home_text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam soluta dolores consequatur fuga sit tenetur tempore voluptatibus? Fugiat facere eaque dolore dignissimos quaerat odit. Totam laboriosam reprehenderit laudantium voluptas sint?
+                Welcome to Barberia Barbers, where we craft more than just haircuts - we sculpt confidence, style, and individuality. Step into our world where every trim, shave, and style is a masterpiece tailored to reflect your unique personality. Experience the artistry of grooming with a blend of tradition and innovation. At Barberia Barbers, it's not just a cut, it's a statement.
             </div>
             <div class="cut_img shadow_text">
                 <h3 class="cut_text">Not just<br>a cut</h3>
             </div>
         </div>
+
         <div class="mid_container">
             <div class="home_text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam soluta dolores consequatur fuga sit tenetur tempore voluptatibus? Fugiat facere eaque dolore dignissimos quaerat odit. Totam laboriosam reprehenderit laudantium voluptas sint?
+                Transforming men's style, one haircut at a time. Elevate your look with our expert touch at Barberia Barbers. Let's redefine your hairstyle and boost your confidence effortlessly in suit that styles you.
             </div>
             <div class="cut_img shadow_text">
                 <h3 class="cut_text">Change your<br>style</h3>
             </div>
         </div>
+
         <div class="mid_container">
             <div class="home_text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam soluta dolores consequatur fuga sit tenetur tempore voluptatibus? Fugiat facere eaque dolore dignissimos quaerat odit. Totam laboriosam reprehenderit laudantium voluptas sint?
+                <h2>Contact Us</h2><br>
+                <span id="home_booking_white_line"></span>
+                <div id="booking_form_container">
+                    <form action="submit" id="booking_form">
+                        <input type="text" class="input_booking" id="input_name" placeholder="Name">
+                        <select name="service_to_avail" class="input_booking" id="input_service" placeholder="Service to Avail">
+                            <option value="" selected disabled hidden>Service to Avail</option>
+                            <option value="Haircut">Haircut</option>
+                            <option value="Haircolor">Haircolor</option>
+                            <option value="Shave">Shave</option>
+                            <option value="Haircut & Color">Haircut & Color</option>
+                            <option value="Haircut & Shave">Haircut & Shave</option>
+                        </select>
+                        <input type="text" class="input_booking" id="input_branch" placeholder="Branch">
+                        <input type="text" class="input_booking" id="input_barber_name" placeholder="Preferred Barber">
+                        <button id="booking_submit">Submit</button>
+                    </form>
+                </div>
             </div>
             <div class="cut_img shadow_text">
                 <h3 class="cut_text">Work with<br>our experts</h3>
             </div>
         </div>
     </section>
-
-    <footer id="footer">
-        <div id="top_footer">
-            <ul id="first_options" class="options">
-                <li><a href="./home_page.html">HOME</a></li>
-                <li><a href="./History.html">HISTORY</a></li>
-                <li><a href="">CONTACT US</a></li>
-                <li><a href="./About.html">ABOUT US</a></li>
-            </ul>
-            <img src="./resources/etc/barberiaRoundLogoNobg.png" alt="" id="bottom_logo">
-            <ul id="second_options" class="options">
-                <li><a href="">LOCATIONS</a></li>
-                <li><a href="./Services.html">SERVICES</a></li>
-                <li><a href="">BOOKING</a></li>
-                <li><a href="">GET IN STYLE</a></li>
-            </ul>
-        </div>
-        <div id="footer_separator">
-            <span></span>
-        </div>
-        <div id="bottom_footer">
-            <img src="./resources/etc/socials.png" alt="" id="socials">
-            <h3>ALL RIGHTS RESERVED 2020-2024</h3>
-        </div>
-    </footer>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/001_add_elements.js"></script>
+    <!-- <script src="./js/booking.js"></script> -->
 </body>
 </html>

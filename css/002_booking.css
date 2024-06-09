@@ -1,0 +1,73 @@
+#booking_form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: none;
+    padding: none;
+    align-items: center;
+    justify-items: center;
+  }
+
+.input_booking{
+    width: 80%;
+    padding: 1.7rem;
+    border-radius: 3rem;
+    font-family: "Montserrat Regular";
+    border: 1px black solid;
+    display: block;
+}
+
+#input_service{
+  appearance: none;
+}
+
+#input_service option{
+    background-color: black; 
+    border: 1px white solid;
+    color: white;
+    line-height: 2;
+}
+
+#booking_submit{
+    display: block;
+    padding: 1.5rem 3rem;
+    border-radius: 1.7rem;
+    font-family: "Montserrat Regular";
+    border: 1px black solid;
+    transition: 0.5s ease-in-out;
+    
+}
+
+#booking_submit:hover{
+    display: block;
+    color: white;
+    background-color: black;
+    padding: 1.5rem 3rem;
+    border-radius: 1.7rem;
+    font-family: "Montserrat Regular";
+    border: 1px black solid;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* FONT */
+
+@font-face {
+    font-family: "TW Cent";
+    src: url(/resources/fonts/TW_Cent.TTF);
+  }
+  
+  @font-face {
+    font-family: "Montserrat Extra Light";
+    src: url(/resources/fonts/Montserrat-ExtraLight.ttf);
+  }
+  
+  @font-face {
+    font-family: "Montserrat Light";
+    src: url(/resources/fonts/Montserrat-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: "Montserrat Regular";
+    src: url(/resources/fonts/Montserrat-Regular.ttf);
+  }

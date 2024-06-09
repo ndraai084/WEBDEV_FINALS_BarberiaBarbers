@@ -1,0 +1,7 @@
+https://stackoverflow.com/questions/18704449/export-html-form-data-to-excel
+https://www.octoparse.com/blog/export-html-table-to-excel
+https://sentry.io/answers/how-do-i-scroll-to-the-top-of-the-page-in-javascript/
+https://www.w3schools.com/howto/howto_css_text_selection.asp
+https://www.w3schools.com/howto/howto_css_dropdown.asp
+
+

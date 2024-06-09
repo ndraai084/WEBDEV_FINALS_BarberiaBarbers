@@ -1,23 +1,99 @@
 /* SERVICES  */
-.services_container{
+#services_style_options{
   display: flex;
-  color: #FFFFFF;
-  border-top: 4px #260f01 solid;
+  flex-direction: row;
+  width: 100%;
+  padding: 5rem 15rem;
 }
 
+#services_style_options #services_style_options_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#services_style_options #slider_container{
+  width: 100%;
+  place-content: center;
+}
+
+#services_style_options #styles_intro{
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+#services_style_options #services_style_black_line{
+  height: 25rem;
+  width: 0.3rem;
+  display: inline-block;
+  background-color: black;
+}
+
+.services_wrapper{
+  display: flex;
+  color: #FFFFFF;
+  /* border-top: 4px #260f01 solid; */
+}
+
+.services_card:nth-child(1) .services_wrapper{
+  width: 100%;
+  background-image: url(/resources/etc/services-img1.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.services_card:nth-of-type(2) .services_wrapper{
+  width: 100%;
+  background-image: url(/resources/etc/services-img2.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;}
+
+
+.services_card:nth-of-type(3) .services_wrapper{
+  width: 100%;
+  background-image: url(/resources/etc/services-img3.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;}
+
 .services_offered{
+  color: white;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 0 5rem;
-  background: #52281d;
   height: 350px;
-  width: 50%;
+  width: 60%;
   font-size: 1.5rem;
   font-family: "Montserrat Regular";
   line-height: 2;
+}
+
+.services_card{
+  /* padding: 1rem 4rem; */
+  padding-top: 1.5rem;
+  scale: 1;
+  transition: 0.2s ease-in-out;
+}
+
+.services_card:hover{
+  scale: 1.05;
+  transition: 0.2s ease-in-out;
+}
+
+#services_container .services_card:nth-child(even) .services_wrapper{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#services_container .services_card:nth-child(even) .services_offered{
+  background-image: linear-gradient(to left, black, black, transparent);
+}
+
+#services_container .services_card:nth-child(odd) .services_offered{
+  background-image: linear-gradient(to right, black,black,  transparent);
 }
 
 .services_offered .services_text{
@@ -26,7 +102,7 @@
 }
 
 .services_offered h1{
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 600;
 }
 
@@ -76,25 +152,6 @@
   height: 2px;
   background: #FFFFFF;
   margin-bottom: 20px;
-}
-
-.services_container .services_img{
-  width: 50%;
-  background-image: url(./resources/etc/services-img1.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-}
-
-.services_container:nth-of-type(even){
-  flex-direction: row-reverse;
-}
-
-.services_container:nth-of-type(2) .services_img{
-  background-image: url(./resources/etc/services-img2.jpg);
-}
-
-.services_container:nth-of-type(3) .services_img{
-  background-image: url(./resources/etc/services-img3.jpg);
 }
 
 /* SLIDER */
@@ -177,6 +234,10 @@
 #slider #haircuts .content{
   margin-left: 50px;
   margin-right: 50px;
+}
+
+#styles_intro h1{
+  font-size: 4rem;
 }
 
 /* BOOKING */
